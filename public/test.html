@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synersys Security Awareness Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background: linear-gradient(135deg, #0f2138 0%, #1a3352 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 40px;
+            max-width: 800px;
+        }
+        
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        .orange {
+            color: #f26b1f;
+        }
+        
+        .status-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .status-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        
+        .status-item::before {
+            content: "✅";
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        
+        .button {
+            background: #f26b1f;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .button:hover {
+            background: #d8581a;
+            transform: translateY(-2px);
+        }
+        
+        .button-secondary {
+            background: transparent;
+            border: 2px solid #ffffff;
+        }
+        
+        .button-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Synersys <span class="orange">Security</span> Portal</h1>
+        <p style="font-size: 20px; margin-bottom: 30px;">Professional Security Awareness Training</p>
+        
+        <div class="status-card">
+            <h2 style="font-size: 24px; margin-bottom: 20px; color: #f26b1f;">System Status</h2>
+            <div class="status-item">Application is running successfully</div>
+            <div class="status-item">Docker container is active</div>
+            <div class="status-item">Static HTML loaded correctly</div>
+            <div class="status-item">Synersys branding applied</div>
+        </div>
+        
+        <div style="margin-top: 40px;">
+            <button class="button" onclick="window.location.href='/'">Go to Main App</button>
+            <button class="button button-secondary" onclick="alert('This is a test page to verify the basic setup is working.')">Test Connection</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+*.log
+
+# Long-named original video files (copies exist as video-01/02/03.mp4)
+public/videos/Professional*

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  # Production server with nginx
+  app:
+    build:
+      context: .
+      target: prod
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

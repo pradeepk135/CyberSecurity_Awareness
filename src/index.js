@@ -1,0 +1,9 @@
+import './tweaks-panel.jsx';
+import './data.jsx';
+import './components.jsx';
+import './screens/sign-in.jsx';
+import './screens/dashboard.jsx';
+import './screens/module.jsx';
+import './screens/assessment.jsx';
+import './screens/certificate.jsx';
+import './screens/manager.jsx';
